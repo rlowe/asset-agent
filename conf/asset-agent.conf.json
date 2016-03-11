@@ -1,0 +1,12 @@
+{
+    "Port":                  "",
+    "HTTPAuthUser":          "",
+    "HTTPAuthPassword":      "",
+    "UseSSL":                false,
+    "SSLCertFile":           "",
+    "SSLPrivateKeyFile":     "",
+    "HostNameCmd":           "/bin/hostname",
+    "SystemManufacturerCmd": "/usr/bin/sudo /usr/sbin/dmidecode | /bin/grep 'Vendor: ' | /bin/sed -e 's/\sVendor: //'",
+    "SystemProductNameCmd":  "/usr/bin/sudo /usr/sbin/dmidecode | /bin/grep 'Product Name: ' | /usr/bin/head -n1 | /bin/sed -e 's/\sProduct Name: //'",
+    "SystemSerialNoCmd":     "/usr/bin/sudo /usr/sbin/dmidecode | /bin/grep 'Serial Number: ' | /usr/bin/head -n1 | /bin/sed -e 's/\sSerial Number: //'",
+}
